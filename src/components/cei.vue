@@ -19,6 +19,13 @@
               :index="item.id+''"
               :key="item.id"  @click="itemClick(item.id)" >{{ item.name }}</el-menu-item>
             </el-submenu>
+            <el-submenu index="2">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>首页</span>
+              </template>
+              <el-menu-item index="2-1" @click="tu">走马</el-menu-item>
+            </el-submenu>
           </el-menu>
         </el-col>
         <router-view></router-view>
@@ -47,6 +54,9 @@ export default {
          id:index
        }
      })
+    },
+    tu(){
+      this.$router.push('/cei/zouma')
     }
   },
   rout(){

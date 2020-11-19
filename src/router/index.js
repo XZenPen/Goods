@@ -6,6 +6,7 @@ import xq from '../views/xq'
 import cei from '@/components/cei'
 import cart from '@/views/cart'
 import personal from '@/views/personal'
+import zouma from '@/views/zouma'
 
 Vue.use(VueRouter);
 const originalPush = VueRouter.prototype.push
@@ -31,6 +32,11 @@ VueRouter.prototype.push = function push(location) {
         name:'list',
         component:List,
         
+      },
+      {
+        path:'zouma',
+        name:'zouma',
+        component:zouma
       }
     ]
   },{

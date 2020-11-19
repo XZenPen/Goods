@@ -94,7 +94,6 @@ export default {
     }
   },
   created() {
-    this.$router.push('/cei/list?id=1')
   },
   mounted() {
     this.getProducts(this.$route.query.id);
